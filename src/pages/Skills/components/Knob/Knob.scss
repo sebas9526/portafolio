@@ -1,0 +1,50 @@
+#skill {
+  span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .skill__knob {
+    border-radius: 15px;
+    height: 8px;
+    width: 80%;
+    background-color: #a2d0fd;
+    position: relative;
+    margin-bottom: 30px;
+
+    .skill__progress {
+      border-radius: 15px;
+      background-color: #5790e6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8px;
+      width: 0;
+      transition: width 2s;
+
+      span {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: #5790e6;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        top: -17px;
+        right: -15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: var(--width);
+  }
+}

@@ -1,0 +1,50 @@
+#header {
+  background-color: #1e2326;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+
+  .p-menubar {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+
+    .logo {
+      font-family: 'Righteous';
+      font-size: 35px;
+      color: #5790e6;
+      text-decoration: none;
+    }
+
+    .p-menubar-root-list {
+      gap: 30px;
+
+      .p-menuitem {
+        .p-menuitem-link {
+          span {
+            color: #fff;
+          }
+        }
+
+        :hover {
+          background-color: transparent;
+          color: #5790e6 !important;
+        }
+      }
+    }
+  }
+
+  .nav-responsive {
+    background-color: #5790e6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+}
