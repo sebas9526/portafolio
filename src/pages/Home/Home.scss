@@ -1,12 +1,12 @@
 #home {
-  background: linear-gradient(to top, rgb(30 35 38 / 53%), rgb(30, 35, 38)), url(/src/assets/fondo.jpg);
+  background: linear-gradient(180deg, rgba(55, 54, 61, 1) 0%, rgb(0 0 0 / 81%) 50%, rgba(55, 54, 61, 1) 100%), url(/src/assets/fondo.jpg);
   background-size: cover;
   height: 113vh;
   color: #fff;
   display: flex;
   align-items: center;
 
-  .content-banner {
+  .container-banner {
     background-color: #2d424e;
     max-width: 400px;
 

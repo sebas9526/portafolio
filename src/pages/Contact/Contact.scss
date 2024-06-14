@@ -1,0 +1,95 @@
+#contact {
+  background: linear-gradient(180deg, rgba(55, 54, 61, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(55, 54, 61, 1) 100%);
+  color: #fff;
+  padding: 50px 20px;
+
+  .contact__container {
+    max-width: 1100px;
+    margin: auto;
+
+    .contact__title {
+      font-family: 'Righteous';
+      font-size: 48px;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+
+  h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      border: none;
+      margin-bottom: 2px;
+      background-color: #252A2E;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      color: #fff;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      margin: 20px auto;
+      padding: 10px 22px;
+      z-index: 1;
+
+      .contact__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #5790e6;
+        border-radius: 15px;
+        z-index: -1;
+        transition: 1s;
+      }
+
+      &:hover .contact__overlay {
+        width: 100%;
+        border-radius: 15px;
+      }
+    }
+
+    .contact__info {
+      margin-top: -130px;
+      position: sticky;
+      z-index: 10000;
+
+      ul {
+        padding: 12px !important;
+        background: linear-gradient(90deg, rgba(55, 54, 61, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(55, 54, 61, 1) 100%);
+        list-style: none;
+        border: 1px solid;
+        width: 306px;
+        border-radius: 15px;
+
+        li {
+          i {
+            color: #5790e6;
+            display: inline-block;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

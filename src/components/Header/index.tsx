@@ -12,7 +12,7 @@ import './Header.scss';
 /**
  * @description   Componente para el encabezado de la pagina
  * @dateCreation  04/06/2024
- * @dateUpdating  04/06/2024
+ * @dateUpdating  09/06/2024
  * @userCreation  Sebastian saldarriaga
  * @return        {*}  {ReactNode}
  */
@@ -20,11 +20,11 @@ const Header = (): ReactNode => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
   const [itemsMenu] = useState<ItemsMenu[]>([
     { id: 'home', value: 'INICIO' },
-    { id: 'sobremi', value: 'SOBRE MI' },
+    { id: 'about-me', value: 'SOBRE MI' },
     { id: 'skills', value: 'SKILLS' },
     { id: 'curriculum', value: 'CURRICULUM' },
     { id: 'portafolio', value: 'PORTAFOLIO' },
-    { id: 'contacto', value: 'CONTACTO' },
+    { id: 'contact', value: 'CONTACTO' },
   ]);
 
   const menuItems = itemsMenu.map(item => ({
