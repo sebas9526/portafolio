@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
 import Curriculum from './pages/Curriculum';
 
 // Componentes de PrimeReact
@@ -12,7 +13,6 @@ import { ScrollTop } from 'primereact/scrolltop';
 
 // Estilos de la pagína
 import './App.scss'
-import Contact from './pages/Contact';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
       <Curriculum />
 
 
-      <section id="portafolio" className="potafolio">
+      {/* <section id="portafolio" className="potafolio">
         <div className="contenido-section">
           <h2>PORTAFOLIO</h2>
           <div className="galeria">
@@ -76,7 +76,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Contact />
 
