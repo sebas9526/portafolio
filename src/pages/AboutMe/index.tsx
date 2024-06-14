@@ -4,7 +4,7 @@ import { ReactNode, useState } from "react";
 import { Interests, PersonalInformation } from './interfaces';
 
 // Hoja de vida para exportar
-import HV from '../../assets/SEBASTIAN SALDARRIAGA.pdf';
+import HV from '../../assets/SEBASTIAN_SALDARRIAGA.pdf';
 
 // Componente de PrimeReact
 import { Button } from 'primereact/button';
